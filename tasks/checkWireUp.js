@@ -42,7 +42,7 @@ module.exports = async function (taskArgs) {
                     trustedRemoteTable[environment][envToCamelCase] = await contract.trustedRemoteLookup(dstChainId)
                 }
             } catch (error) {
-                //catch error because checkWireUpAll is reading console log as input
+                // catch error because checkWireUpAll is reading console log as input
             }
         })
     )
